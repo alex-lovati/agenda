@@ -1,0 +1,31 @@
+table{
+border-collapse: collapse;
+}
+
+#titre{
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+}
+
+td{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    color:rgb(255, 255, 255)
+}
+
+.tableau{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main{
+    display: flex;
+    justify-content: center;   
+}
+
+body{
+    background-color: black; 
+}
