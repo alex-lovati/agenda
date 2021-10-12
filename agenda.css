@@ -6,6 +6,11 @@ border-collapse: collapse;
     color: #ff0000;
     display: flex;
     justify-content: center;
+    font-family: 'Alegreya', serif;
+}
+#soustitre{
+    display: flex;
+    justify-content: center;
 }
 
 td{
@@ -40,8 +45,6 @@ footer{
 }
 header{
     background-color: sandybrown;
-    display: flex;
-    justify-content: center;
     height: 10em;
 }
 .transparent{
