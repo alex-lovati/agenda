@@ -2,20 +2,55 @@
 <html lang="fr">
     <head>
         <link href="agenda.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://static.thenounproject.com/png/1082782-200.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap">
+        <title>formulaire</title>
     </head>
     <body>
         <header>
-            <h1 id="titre">formulaire</h1>
+            <h1 id="titre">Formulaire</h1>
+             <div id="soustitre"><h2><button class="button" style="button"><a class="link" href="agenda.html">Agenda</button>&emsp;&emsp;</a></h2>
+                <h2><button class="button" style="button"><a class="link" href="formulaire.html">Formulaire</button></a></h2></div>
         </header>
 
         <main>
-            <textarea name"textarea"
+            <br><br><br><br><br>
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label class="texteform" for="name">Jour:</label>
+                    <input type="text" id="name" name="user_name" placeholder="jj/mm/aaaa">
+                </div>
+                <div>
+                    <label class="texteform" for="name">Heure:</label>
+                    <input type="text" id="name" name="user_name" placeholder="hh:mm">
+                </div>
+                <div>
+                    <label class="texteform" for="mail">Evenement:</label>
+                    <input type="email" id="mail" name="user_mail" placeholder="ex:rendez-vous, repas...">
+                </div>
+                <div>
+                    <label class="texteform" for="msg">Description :</label>
+                    <textarea id="msg" name="user_message" placeholder="(facultatif)"></textarea>
+                </div>
+                <div class="boutton">
+                    <button type="submit">Envoyer</button>
+                </div>            
+            </form>
+            <br><br><br><br><br>
+            <!-- <textarea name"textarea"
             rows"10" cols"50"
             maxlength="30"
-            placeholder="vous pouvez ecrire ici"></textarea>
+            placeholder="vous pouvez ecrire ici"></textarea> -->
         </main>
 
         <footer>
+            <p id="textefooter">contact:
+                <br>email:alex.lovati@laplateforme.io
+                <br>telephone:
+                <br>adresse:
+                <br>twitter
+                <br>facebook
+            </p>
         </footer>
     </body>
 

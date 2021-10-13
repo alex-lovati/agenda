@@ -1,16 +1,50 @@
 table{
 border-collapse: collapse;
 }
+header{
+    background-color: rgb(255, 0, 0);
+    height: 13em;
+}
 
 #titre{
-    color: #ff0000;
+    color: #000000;
     display: flex;
     justify-content: center;
     font-family: 'Alegreya', serif;
+    font-size: 60px;
 }
 #soustitre{
     display: flex;
     justify-content: center;
+    color: red;
+}
+.link{
+    text-decoration: none;
+    color: red;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}
+.button{
+    border: 0;
+    line-height:2.5 ;
+    padding: 0 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(red, green, blue,),
+    inset -2px -2px 3px rgba(red, green, blue,);
+}
+.button:hover{
+    background-color: rgb(88, 88, 88);
+}
+.button:active{
+    inset 2px 2px 3px rgba(red, green, blue,),
+    inset -2px -2px 3px rgba(red, green, blue,);
 }
 
 td{
@@ -21,32 +55,106 @@ td{
 
 .tableau{
     position: absolute;
-    top: 20%;
-    /* left: 50%;
-    transform: translate(-50%, -50%); */
-}
-
-main{
+    top: 30%;
     display: flex;
     justify-content: center;
-    background-color: aqua; 
+    left: 20%
+    /* transform: translate(-50%, -50%); */
+}
+.dejeuner{
+    background-color: rgb(88, 88, 88);
+}
+.anniv{
+    background-color: rgb(133, 66, 66);
+}
+.mariage{
+    background-color: rgb(110, 19, 19);
+}
+
+#main{
+    background-color: rgb(0, 0, 0); 
     height: 130em;
+}
+main{
+    background-color: rgb(0, 0, 0); 
 }
 
 body{
     background-color: black ; 
 }
 footer{
-    color: red;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     background-color: red;
 
 }
-header{
-    background-color: sandybrown;
-    height: 10em;
+#textefooter{
+    font-size: 25px;
 }
+
 .transparent{
-    color: aqua
+    color: rgb(0, 0, 0)
 }
+.texteform{
+    color: red;
+}
+form {
+    /* Uniquement centrer le formulaire sur la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 1em;
+    border: 5px solid rgb(255, 0, 0);
+    border-radius: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+    font: 1em sans-serif; color: rgb(255, 0, 0);
+  
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  input:focus, textarea:focus {
+    /* Pour souligner légèrement les éléments actifs */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    vertical-align: top;
+  
+    /* Pour donner assez de place pour écrire du texte */
+    height: 5em;
+  }
+  
+  .boutton {
+    /* Pour placer le bouton à la même position que les champs texte */
+    padding-left: 90px; /* même taille que les étiquettes */
+  }
+  
+  button {
+    /* Cette marge supplémentaire représente grosso modo le même espace que celui
+       entre les étiquettes et les champs texte */
+    margin-left: .5em;
+    color: rgb(255, 0, 0);
+  }
+  
